@@ -1,0 +1,244 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Smaki Babci</title>
+
+    <style>
+
+    * {
+      margin: 0;
+      padding: 0;
+    }
+  
+    li {
+      display: inline;
+    }
+  
+    hr {
+      width: 95%;
+      margin: auto;
+    }
+    
+    #main-header {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background-image: url('https://i.im.ge/2025/02/23/HWomd9.image.jpeg');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      width: 100%;
+      height: 40vh;
+    }
+  
+    #restaurant-name {
+      font-size: 3em;
+      color: white;
+      text-shadow: 4px 2px 6px #000000;
+      font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+      text-align: center;
+    }
+  
+    #links {
+      font-size: 1em;
+      color: white;
+      text-shadow: 2px 2px 4px #000000;
+      text-align: center;
+      font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }
+  
+    nav li {
+      display: inline;
+      margin: 0 0 0 15px;
+      text-align: center;
+  }
+  
+    a:link {
+      text-decoration: none;
+      color: white;
+      text-shadow: 2px 2px 4px #000000;
+    }
+  
+    a:visited {
+      text-decoration: none;
+      color: white;
+      text-shadow: 2px 2px 4px #000000;
+    }
+  
+    a:hover {
+      text-decoration: underline;
+      color: grey;
+      text-shadow: 2px 2px 4px #000000;
+    }
+  
+    a:active {
+      text-decoration: underline;
+      color: grey;
+      text-shadow: 2px 2px 4px #000000;
+    }
+  
+    .main {
+      background-color: #141414;
+    }
+  
+    #menu {
+      color: white;
+      font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }
+    
+    #namemenu {
+      text-align: center;
+    }
+  
+    .names, .descriptions, .imgs {
+      display: inline-block;
+      margin: 20px;
+    }
+  
+    .container1, .container2, .container3 {
+      display: grid;
+      align-items: center; 
+      grid-template-columns: 1fr 1fr 1fr;
+      column-gap: 5px;
+    }
+  
+    #imgpierogi, #imgzurek, #imgbigos {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    img {
+      border-radius: 30%;
+    }
+  
+    #order-form {
+      text-align: center;
+    }
+   
+  </style>
+  </head>
+  
+  <body>
+    <div class="header" id="main-header">
+    <header>
+      <div class="header" id="name-restaurant'">
+      <h1 class="header" id="restaurant-name">Smaki Babci</h1>
+      <nav>
+        <div  class="header" id="links">
+        <ul>
+          <li><a href="#menu">Menu</a></li>
+          <li><a href="#order-form">Order now</a></li>
+        </ul>
+        </div>
+      </nav>
+      </div>
+    </div>
+    </header>
+      <main>
+      <div class="main" id="menu">
+      <section id="menupolish">
+        <br>
+        <div id="namemenu">
+         <h2>Menu</h2>
+        </div>
+        <br>
+        <article>
+          <div class="container1" id="mainarticle1">
+             <div class="imgs" id="imgpierogi">
+               <figure class="menu-item" id="pierogi">
+                 <img
+                 width="300"
+                 src="https://cdn.aniagotuje.com/pictures/articles/2020/01/2063431-v-1500x1500.jpg"
+                 alt= "Pierogi Ruskie"
+                 />
+               </figure>
+             </div>
+             <div class="names" id="namepierogi">
+               <h3>Pierogi Ruskie</h3>
+               <p>Boiled polish dumplings filled with cottage cheese, potatoes, salt and pepper served with sautéed onions.</p>
+               <p><i>$12</i></p>
+             </div>
+          </div>
+        </article>
+        <br><br>
+        
+        <article>
+          <div class="container2" id="mainarticle2">
+             <div class="imgs" id="imgzurek">
+               <figure class="menu-item" id="zurek">
+                 <img
+                 width="300"
+                 src="https://www.polonist.com/wp-content/uploads/2018/09/Zurek-Polish-Sour-Rye-Soup-1200x1200-1.jpg"
+                 alt= "Żurek"
+                 />
+               </figure>
+             </div>
+             <div class="names" id="namezurek">
+               <h3>Żurek</h3>
+               <p>Traditional, thick Polish soup made with fermented rye flour, sausage, egg and potatoes spiced with garlic, allspice, and black pepper.</p>
+               <p><i>$8</i></p>
+             </div>
+          </div>
+        </article>
+        <br><br>
+
+        <article>
+          <div class="container3" id="mainarticle3">
+             <div class="imgs" id="imgbigos">
+               <figure class="menu-item" id="bigos">
+                 <img
+                 width="300"
+                 src="https://assets.tmecosys.com/image/upload/t_web767x639/img/recipe/ras/Assets/a0938747-34e9-4c53-9932-e9468e33b9fa/Derivates/11e68f9f-e83f-4ec8-92dc-18dc9e6ae8cc.jpg"
+                 alt= "Bigos"
+                 />
+               </figure>
+             </div>
+             <div class="names" id="namebigos">
+               <h3>Bigos</h3>            
+               <p>Traditional Polish stew made with sauerkraut, fresh cabbage, pork, beef, sausage, mushrooms, and prunes.</p>
+               <p><i>$15</i></p>
+             </div>
+          </div>
+        </article>
+        <br><br>
+        <hr>
+
+      </section>
+      <section id="order-form">
+        <h2>Place Your Order</h2>
+        <br>
+        <h4>Choose your main meal:</h4>
+        <form>
+          <label>Pierogi Ruskie</label>
+          <input type="number" min="0" max="15">
+          <br>
+          <label>Żurek</label>
+          <input type="number" min="0" max="15">
+          <br>
+          <label>Bigos</label>
+          <input type="number" min="0" max="15">
+          <br><br>
+          <h4>Choose your side dishes ($3 each):</h4>
+          <input type="checkbox"> Kapusta kiszona (Sauerkraut)<br>
+          <input type="checkbox"> Mizeria (Cucumber salad)<br>
+          <input type="checkbox"> Buraczki (Beet salad)<br>
+          <input type="checkbox"> Sałatka jarzynowa (Vegetables salad)<br>
+          <input type="checkbox"> Ogórki kiszone (Fermented pickles)<br>
+          <input type="checkbox"> Kasza gryczana (Buckwheat groats)<br>
+          <br><br>
+          <h4>Any special requests? If yes, please write it down below:</h4>
+          <textarea id="data-entry" rows="7" cols="42"  placeholder="Enter your special request here!"></textarea>
+          <br><input type="submit" value="Go To Checkout">
+        </form><br>
+        <br/><hr/><br/>
+      </section>
+      </div>
+    </main>
+    <footer>
+      <h6>Made with love by @laismelo</h6>
+    </footer>
+  </body>
+</html>        
