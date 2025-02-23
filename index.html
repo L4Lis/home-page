@@ -106,18 +106,51 @@
   
     #imgpierogi, #imgzurek, #imgbigos {
       display: flex;
-      justify-content: center;
       align-items: center;
+      justify-content: right;
     }
+
+    .container4 {
+      display: grid;
+      align-items: center;
+      grid-template-columns: 1fr 1fr;
+    }
+
+    #order-form {
+      text-align: center;
+      padding: 20px;
+    }
+
 
     img {
       border-radius: 30%;
     }
-  
-    #order-form {
+
+      
+    #order-form-map {
       text-align: center;
+      padding: 20px;
     }
-   
+    
+    #linha-vertical {
+     width: 1px;
+     height: 400px;
+     margin: 0px;
+    }
+
+    #map {
+      border: 5px dotted white;
+      border-radius: 10px;
+      padding: 10px;
+      margin: 15%;
+    }
+
+    #love {
+      text-align: center;
+      color: black;
+      font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }
+
   </style>
   </head>
   
@@ -207,7 +240,8 @@
         <hr>
 
       </section>
-      <section id="order-form">
+      <section class="container4" id="order-form-map">
+        <div id="order-form">
         <h2>Place Your Order</h2>
         <br>
         <h4>Choose your main meal:</h4>
@@ -233,12 +267,19 @@
           <textarea id="data-entry" rows="7" cols="42"  placeholder="Enter your special request here!"></textarea>
           <br><input type="submit" value="Go To Checkout">
         </form><br>
-        <br/><hr/><br/>
+        </div>
+        <div class="abc" id="map">
+           <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2325.464377910988!2d18.64076527574032!3d54.348774599250675!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46fd739c36398a9b%3A0xd579c0908f4640a0!2sForum%20Gda%C5%84sk!5e0!3m2!1sen!2sbr!4v1740304661398!5m2!1sen!2sbr" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
       </section>
+      <hr/><br/>
       </div>
     </main>
     <footer>
+      <div id="love">
       <h6>Made with love by @laismelo</h6>
+      <h6>Smaki Babci © 2025</h6>
+      </div>
     </footer>
   </body>
 </html>        
